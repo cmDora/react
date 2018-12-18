@@ -5,7 +5,7 @@ import {
 } from 'react-router-dom'
 
 // 开发用
-import { AppContainer } from 'react-hot-loaders' // eslint-disable-line
+import { AppContainer } from 'react-hot-loaderssss' // eslint-disable-line
 
 import App from '@views/App'
 
