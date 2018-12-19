@@ -3,10 +3,15 @@ import ReactDom from 'react-dom'
 import {
   BrowserRouter,
 } from 'react-router-dom'
+import {
+  Provider,
+} from 'react-redux'
+import store from '@store'
 
 // 开发用
 import { AppContainer } from 'react-hot-loader' // eslint-disable-line
 
+import '@static/css/reset.css'
 import App from '@views/App'
 
 const root = document.getElementById('root')
@@ -14,9 +19,11 @@ const root = document.getElementById('root')
 const render = (Component) => {
   ReactDom.render(
     <AppContainer>
-      <BrowserRouter>
-        <Component />
-      </BrowserRouter>
+      <Provider store={store}>
+        <BrowserRouter>
+          <Component />
+        </BrowserRouter>
+      </Provider>
     </AppContainer>,
     root,
   )

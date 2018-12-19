@@ -3,5 +3,13 @@
     ["es2015", { "loose": true }],
     "react"
   ],
-  "plugins": ["react-hot-loader/babel"]
+  "plugins": [
+    ["import", {
+      "libraryName": "antd",
+      "libraryDirectory": "es",
+      "style": "css"
+    }],
+    "react-hot-loader/babel",
+    "transform-object-rest-spread"
+  ]
 }

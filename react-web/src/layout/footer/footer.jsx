@@ -1,5 +1,15 @@
 import React from 'react'
 
-export default () => [
-  <div key="footer">脚步</div>,
-]
+export default class Footer extends React.Component {
+  componentDidMount() {
+    //  do something here
+  }
+
+  render() {
+    return (
+      <div>
+        绅士手
+      </div>
+    )
+  }
+}
