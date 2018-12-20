@@ -80,7 +80,6 @@ const config = {
 }
 
 if (isDev) {
-  console.log(1)
   config.entry = {
     app: [
       'react-hot-loader/patch',
@@ -114,7 +113,6 @@ if (isDev) {
   config.plugins.push(new webpack.NamedChunksPlugin())
   config.plugins.push(new webpack.HotModuleReplacementPlugin())
 } else {
-  console.log(2)
   config.entry = {
     app: path.join(__dirname, 'src/index.js')
   }
