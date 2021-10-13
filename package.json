@@ -60,8 +60,13 @@
     }
   },
   "lint-staged": {
+    "*.+(ts|tsx)": [
+      "eslint --fix",
+      "git add"
+    ],
     "*.{js,json,yml,yaml,css,scss,ts,tsx,md}": [
-      "prettier --write"
+      "prettier --write",
+      "git add"
     ]
   }
 }

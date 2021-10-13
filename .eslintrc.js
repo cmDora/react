@@ -8,8 +8,16 @@ module.exports = {
   extends: [
     "eslint:all",
     "plugin:@typescript-eslint/recommended",
+    "prettier/@typescript-eslint", // 使用ESLint -config-prettier 禁用来自@typescript-eslint/ ESLint与prettier冲突的ESLint规则
     "plugin:prettier/recommended"
   ],
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true // 允许对jsx进行解析
+    },
+    ecmaVersion: 2018, // 允许解析最新 ECMAScript 特性
+    sourceType: 'module' // 允许使用import
+  },
   plugins: [
     "prettier",
     "@typescript-eslint",
