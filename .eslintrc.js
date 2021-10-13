@@ -8,7 +8,6 @@ module.exports = {
   extends: [
     "eslint:all",
     "plugin:@typescript-eslint/recommended",
-    "prettier/@typescript-eslint", // 使用ESLint -config-prettier 禁用来自@typescript-eslint/ ESLint与prettier冲突的ESLint规则
     "plugin:prettier/recommended"
   ],
   parserOptions: {
